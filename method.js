@@ -1,7 +1,21 @@
 (function (context) {
 
     var NOON = {};
-    var const_object = 'object';
+    var const_object = 'object', const_number = 'number';
+
+
+    // Name:
+    //      isNumber
+    // Description:
+    //      Judge whether the value is a number or not.
+    // Params:
+    //      value [Any] - The value to be judged.
+    // Returns:
+    //      Whether the value is a number or not.
+    function isNumber(value) {
+        return typeof value === const_number;
+    }
+    NOON.isNumber = isNumber;
 
     // Name:
     //      isEqualObject
@@ -191,6 +205,7 @@
         return null;
     }
     NOON.getFieldValueInComplexObject = getFieldValueInComplexObject;
+
 
     context.NOON = NOON;
 
