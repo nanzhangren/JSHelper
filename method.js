@@ -1,5 +1,7 @@
 (function (context) {
-
+	
+	"use strict";
+	
     var NOON = {};
     var const_object = 'object', const_number = 'number';
 
