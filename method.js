@@ -2,7 +2,7 @@
 	
 	"use strict";
 	
-    var NOON = {};
+    var JSHelper = {};
     var const_object = 'object', const_number = 'number';
 
 
@@ -17,7 +17,20 @@
     function isNumber(value) {
         return typeof value === const_number;
     }
-    NOON.isNumber = isNumber;
+    JSHelper.isNumber = isNumber;
+
+    // Name:
+    //      isString
+    // Description:
+    //      Judge whether the value is a string or not.
+    // Params:
+    //      value [Any] - The value to be judged.
+    // Returns:
+    //      Whether the value is a string or not.
+    function isString(value) {
+        return typeof value === const_string;
+    }
+    JSHelper.isString = isString;
 
     // Name:
     //      isEqualObject
@@ -100,7 +113,7 @@
         }
         return true;
     }
-    NOON.isEqualObject = isEqualObject;
+    JSHelper.isEqualObject = isEqualObject;
 
     // Name:
     //      convertKeyCodeToASCIICode
@@ -161,7 +174,7 @@
         //    space  =>  32
         return retCode;
     }
-    NOON.convertKeyCodeToASCIICode = convertKeyCodeToASCIICode;
+    JSHelper.convertKeyCodeToASCIICode = convertKeyCodeToASCIICode;
 
     // Name:
     //      getFieldValueInComplexObject
@@ -206,9 +219,9 @@
         }
         return null;
     }
-    NOON.getFieldValueInComplexObject = getFieldValueInComplexObject;
+    JSHelper.getFieldValueInComplexObject = getFieldValueInComplexObject;
 
 
-    context.NOON = NOON;
+    context.NOON = JSHelper;
 
 })(this);
