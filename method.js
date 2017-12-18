@@ -3,7 +3,8 @@
 	"use strict";
 	
     var JSHelper = {};
-    var const_object_number = '[object Number]', const_object_string = '[object String]';
+    var const_object_number = '[object Number]', const_object_string = '[object String]',
+        const_object_object = '[object Object]', const_object_array = '[object Array]';
 
 
     // Name:
@@ -31,6 +32,32 @@
         return Object.prototype.toString.call(value) === const_object_string;
     }
     JSHelper.isString = isString;
+
+    // Name:
+    //      isObject
+    // Description:
+    //      Judge whether the value is an object or not.
+    // Params:
+    //      value [Any] - The value to be judged.
+    // Returns:
+    //      Whether the value is an object or not.
+    function isObject(value) {
+        return Object.prototype.toString.call(value) === const_object_object;
+    }
+    JSHelper.isObject = isObject;
+
+    // Name:
+    //      isArray
+    // Description:
+    //      Judge whether the value is an array or not.
+    // Params:
+    //      value [Any] - The value to be judged.
+    // Returns:
+    //      Whether the value is an array or not.
+    function isArray(value) {
+        return Object.prototype.toString.call(value) === const_object_array;
+    }
+    JSHelper.isArray = isArray;
 
     // Name:
     //      isEqualObject
