@@ -3,7 +3,7 @@
 	"use strict";
 	
     var JSHelper = {};
-    var const_object = 'object', const_number = 'number';
+    var const_object_number = '[object Number]', const_object_string = '[object String]';
 
 
     // Name:
@@ -15,7 +15,7 @@
     // Returns:
     //      Whether the value is a number or not.
     function isNumber(value) {
-        return typeof value === const_number;
+        return Object.prototype.toString.call(value) === const_object_number;
     }
     JSHelper.isNumber = isNumber;
 
@@ -28,7 +28,7 @@
     // Returns:
     //      Whether the value is a string or not.
     function isString(value) {
-        return typeof value === const_string;
+        return Object.prototype.toString.call(value) === const_object_string;
     }
     JSHelper.isString = isString;
 
