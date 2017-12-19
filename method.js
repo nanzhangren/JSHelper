@@ -60,6 +60,28 @@
     JSHelper.isArray = isArray;
 
     // Name:
+    //      isEmptyObject
+    // Description:
+    //      Judge whether the value is an empty object or not.
+    // Params:
+    //      value [Any] - The value to be judged.
+    // Returns:
+    //      Whether the value is an empty object or not.
+    function isEmptyObject(value) {
+        if (!isObject(value)) {
+            return false;
+        }
+        var tempObj = value;
+        for (var prop in tempObj) {
+            if (tempObj.hasOwnProperty(prop)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    JSHelper.isEmptyObject = isEmptyObject;
+
+    // Name:
     //      isEqualObject
     // Description:
     //      Compare whether the given two object are equal. Which means the reuslt will be true 

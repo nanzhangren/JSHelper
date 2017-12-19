@@ -6,6 +6,7 @@ Here are useful helpful methods for JavaScript.
 - isString
 - isObject
 - isArray
+- isEmptyObject
 - isEqualObject
 - convertKeyCodeToASCIICode
 - getFieldValueInComplexObject
