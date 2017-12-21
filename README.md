@@ -2,6 +2,7 @@
 Here are useful helpful methods for JavaScript.
 
 ### Method List
+- isDefined
 - isNumber
 - isString
 - isObject
@@ -10,3 +11,7 @@ Here are useful helpful methods for JavaScript.
 - isEqualObject
 - convertKeyCodeToASCIICode
 - getFieldValueInComplexObject
+
+### To Add
+- isNullOrUndefined
+- isEqualArray
