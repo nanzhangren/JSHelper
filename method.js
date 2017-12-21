@@ -85,13 +85,7 @@
         if (!isObject(value)) {
             return false;
         }
-        var tempObj = value;
-        for (var prop in tempObj) {
-            if (tempObj.hasOwnProperty(prop)) {
-                return false;
-            }
-        }
-        return true;
+        return Object.keys(value).length === 0;
     }
     JSHelper.isEmptyObject = isEmptyObject;
 
