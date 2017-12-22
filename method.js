@@ -5,7 +5,7 @@
     var JSHelper = {};
     var const_object_number = '[object Number]', const_object_string = '[object String]',
         const_object_object = '[object Object]', const_object_array = '[object Array]';
-    var local_undefined = undefined;
+    var const_undefined = 'undefined';
 
 
     // Name:
@@ -17,7 +17,7 @@
     // Returns:
     //      Whether the value is defined or not.
     function isDefined(value) {
-        return value !== local_undefined;
+        return typeof value !== const_undefined;
     }
     JSHelper.isDefined = isDefined;
 
