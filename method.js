@@ -6,6 +6,7 @@
     var const_object_number = '[object Number]', const_object_string = '[object String]',
         const_object_object = '[object Object]', const_object_array = '[object Array]';
     var const_undefined = 'undefined';
+    var local_null = null, local_undefined = undefined;
 
 
     // Name:
@@ -20,6 +21,19 @@
         return typeof value !== const_undefined;
     }
     JSHelper.isDefined = isDefined;
+
+    // Name:
+    //      isNullOrUndefined
+    // Description:
+    //      Judge whether the value is null or undefined.
+    // Params:
+    //      value [Any] - The value to be judged.
+    // Returns:
+    //      Whether the value is null or undefined.
+    function isNullOrUndefined(value) {
+        return value === local_null || value === local_undefined;
+    }
+    JSHelper.isNullOrUndefined = isNullOrUndefined;
 
     // Name:
     //      isNumber

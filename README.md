@@ -3,6 +3,7 @@ Here are useful helpful methods for JavaScript.
 
 ### Method List
 - isDefined
+- isNullOrUndefined
 - isNumber
 - isString
 - isObject
