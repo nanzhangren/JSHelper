@@ -293,6 +293,6 @@
     JSHelper.getFieldValueInComplexObject = getFieldValueInComplexObject;
 
 
-    context.NOON = JSHelper;
+    context.JSHelper = JSHelper;
 
 })(this);
