@@ -14,5 +14,4 @@ Here are useful helpful methods for JavaScript.
 - getFieldValueInComplexObject
 
 ### To Add
-- isNullOrUndefined
 - isEqualArray
