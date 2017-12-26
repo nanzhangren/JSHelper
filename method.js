@@ -5,7 +5,8 @@
     var JSHelper = {};
     var const_object_number = '[object Number]', const_object_string = '[object String]',
         const_object_object = '[object Object]', const_object_array = '[object Array]';
-    var const_undefined = 'undefined';
+    var const_undefined = 'undefined',
+        const_div = 'DIV';
     var local_null = null;
 
 
@@ -304,6 +305,19 @@
         return null;
     }
     JSHelper.getFieldValueInComplexObject = getFieldValueInComplexObject;
+
+    // Name:
+    //      isDivElement
+    // Description:
+    //      Judge whether the DOM element is a div.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is a div.
+    function isDivElement(ele) {
+        return !!(ele && ele.tagName === const_div);
+    }
+    JSHelper.isDivElement = isDivElement;
 
 
     context.JSHelper = JSHelper;

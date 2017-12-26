@@ -13,6 +13,7 @@ Here are useful helpful methods for JavaScript.
 - isEqualObject
 - convertKeyCodeToASCIICode
 - getFieldValueInComplexObject
+- isDivElement
 
 ### To Add
 - isEqualArray
