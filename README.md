@@ -14,6 +14,7 @@ Here are useful helpful methods for JavaScript.
 - convertKeyCodeToASCIICode
 - getFieldValueInComplexObject
 - isDivElement
+- isInputElement
 
 ### To Add
 - isEqualArray

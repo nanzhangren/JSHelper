@@ -6,7 +6,7 @@
     var const_object_number = '[object Number]', const_object_string = '[object String]',
         const_object_object = '[object Object]', const_object_array = '[object Array]';
     var const_undefined = 'undefined',
-        const_div = 'DIV';
+        const_div = 'DIV', const_input = 'INPUT';
     var local_null = null;
 
 
@@ -318,6 +318,19 @@
         return !!(ele && ele.tagName === const_div);
     }
     JSHelper.isDivElement = isDivElement;
+
+    // Name:
+    //      isInputElement
+    // Description:
+    //      Judge whether the DOM element is an input.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is an input.
+    function isInputElement(ele) {
+        return !!(ele && ele.tagName === const_input);
+    }
+    JSHelper.isInputElement = isInputElement;
 
 
     context.JSHelper = JSHelper;
