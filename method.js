@@ -332,6 +332,19 @@
     }
     JSHelper.isInputElement = isInputElement;
 
+    // Name:
+    //      isTextNode
+    // Description:
+    //      Judge whether the DOM element is a text node.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is a text node.
+    function isTextNode(ele) {
+        return !!(ele && ele instanceof Text);
+    }
+    JSHelper.isTextNode = isTextNode;
+
 
     context.JSHelper = JSHelper;
 

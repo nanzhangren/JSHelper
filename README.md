@@ -15,6 +15,7 @@ Here are useful helpful methods for JavaScript.
 - getFieldValueInComplexObject
 - isDivElement
 - isInputElement
+- isTextNode
 
 ### To Add
 - isEqualArray
