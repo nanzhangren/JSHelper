@@ -6,7 +6,7 @@
     var const_object_number = '[object Number]', const_object_string = '[object String]',
         const_object_object = '[object Object]', const_object_array = '[object Array]';
     var const_undefined = 'undefined',
-        const_div = 'DIV', const_input = 'INPUT';
+        const_div = 'DIV', const_input = 'INPUT', const_img = 'IMG';
     var local_null = null;
 
 
@@ -344,6 +344,19 @@
         return !!(ele && ele instanceof Text);
     }
     JSHelper.isTextNode = isTextNode;
+
+    // Name:
+    //      isImgElement
+    // Description:
+    //      Judge whether the DOM element is an img.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is an img.
+    function isImgElement(ele) {
+        return !!(ele && ele.tagName === const_img);
+    }
+    JSHelper.isImgElement = isImgElement;
 
 
     context.JSHelper = JSHelper;

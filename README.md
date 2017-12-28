@@ -16,6 +16,7 @@ Here are useful helpful methods for JavaScript.
 - isDivElement
 - isInputElement
 - isTextNode
+- isImgElement
 
 ### To Add
 - isEqualArray
