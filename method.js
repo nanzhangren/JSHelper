@@ -6,7 +6,9 @@
     var const_object_number = '[object Number]', const_object_string = '[object String]',
         const_object_object = '[object Object]', const_object_array = '[object Array]';
     var const_undefined = 'undefined',
-        const_div = 'DIV', const_input = 'INPUT', const_img = 'IMG';
+        CONST_DIV = 'DIV', CONST_INPUT = 'INPUT', CONST_IMG = 'IMG', CONST_BUTTON = 'BUTTON';
+    var const_button = 'button';
+    var const_type = 'type';
     var local_null = null;
 
 
@@ -315,7 +317,7 @@
     // Returns:
     //      Whether the DOM element is a div.
     function isDivElement(ele) {
-        return !!(ele && ele.tagName === const_div);
+        return !!(ele && ele.tagName === CONST_DIV);
     }
     JSHelper.isDivElement = isDivElement;
 
@@ -328,7 +330,7 @@
     // Returns:
     //      Whether the DOM element is an input.
     function isInputElement(ele) {
-        return !!(ele && ele.tagName === const_input);
+        return !!(ele && ele.tagName === CONST_INPUT);
     }
     JSHelper.isInputElement = isInputElement;
 
@@ -354,9 +356,25 @@
     // Returns:
     //      Whether the DOM element is an img.
     function isImgElement(ele) {
-        return !!(ele && ele.tagName === const_img);
+        return !!(ele && ele.tagName === CONST_IMG);
     }
     JSHelper.isImgElement = isImgElement;
+
+    // Name:
+    //      isButton
+    // Description:
+    //      Judge whether the DOM element is a button.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is a button.
+    function isButton(ele) {
+        if (!ele) {
+            return false;
+        }
+        return ele.tagName === CONST_BUTTON || isInputElement(ele) && ele.getAttribute(const_type) === const_button;
+    }
+    JSHelper.isButton = isButton;
 
 
     context.JSHelper = JSHelper;
