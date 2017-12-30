@@ -9,6 +9,7 @@ Here are useful helpful methods for JavaScript.
 - isString
 - isObject
 - isArray
+- isFunction
 - isEmptyObject
 - isEqualObject
 - convertKeyCodeToASCIICode
@@ -18,7 +19,6 @@ Here are useful helpful methods for JavaScript.
 - isTextNode
 - isImgElement
 - isButton
-- isFunction
 
 ### To Add
 - isEqualArray
