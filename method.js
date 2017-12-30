@@ -4,7 +4,8 @@
 	
     var JSHelper = {};
     var const_object_number = '[object Number]', const_object_string = '[object String]',
-        const_object_object = '[object Object]', const_object_array = '[object Array]';
+        const_object_object = '[object Object]', const_object_array = '[object Array]',
+        const_object_function = '[object Function]';
     var const_undefined = 'undefined',
         CONST_DIV = 'DIV', CONST_INPUT = 'INPUT', CONST_IMG = 'IMG', CONST_BUTTON = 'BUTTON';
     var const_button = 'button';
@@ -102,6 +103,19 @@
         return Object.prototype.toString.call(value) === const_object_array;
     }
     JSHelper.isArray = isArray;
+
+    // Name:
+    //      isFunction
+    // Description:
+    //      Judge whether the value is a function or not.
+    // Params:
+    //      value [Any] - The value to be judged.
+    // Returns:
+    //      Whether the value is a function or not.
+    function isFunction(value) {
+        return Object.prototype.toString.call(value) === const_object_function;
+    }
+    JSHelper.isFunction = isFunction;
 
     // Name:
     //      isEmptyObject
@@ -375,7 +389,6 @@
         return ele.tagName === CONST_BUTTON || isInputElement(ele) && ele.getAttribute(const_type) === const_button;
     }
     JSHelper.isButton = isButton;
-
 
     context.JSHelper = JSHelper;
 

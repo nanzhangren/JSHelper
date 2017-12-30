@@ -18,6 +18,7 @@ Here are useful helpful methods for JavaScript.
 - isTextNode
 - isImgElement
 - isButton
+- isFunction
 
 ### To Add
 - isEqualArray
