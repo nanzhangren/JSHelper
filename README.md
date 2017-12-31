@@ -10,6 +10,7 @@ Here are useful helpful methods for JavaScript.
 - isObject
 - isArray
 - isFunction
+- isBoolean
 - isEmptyObject
 - isEqualObject
 - convertKeyCodeToASCIICode

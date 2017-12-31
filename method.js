@@ -5,7 +5,7 @@
     var JSHelper = {};
     var const_object_number = '[object Number]', const_object_string = '[object String]',
         const_object_object = '[object Object]', const_object_array = '[object Array]',
-        const_object_function = '[object Function]';
+        const_object_function = '[object Function]', const_object_boolean = '[object Boolean]';
     var const_undefined = 'undefined',
         CONST_DIV = 'DIV', CONST_INPUT = 'INPUT', CONST_IMG = 'IMG', CONST_BUTTON = 'BUTTON';
     var const_button = 'button';
@@ -116,6 +116,19 @@
         return Object.prototype.toString.call(value) === const_object_function;
     }
     JSHelper.isFunction = isFunction;
+
+    // Name:
+    //      isBoolean
+    // Description:
+    //      Judge whether the value is a boolean or not.
+    // Params:
+    //      value [Any] - The value to be judged.
+    // Returns:
+    //      Whether the value is a boolean or not.
+    function isBoolean(value) {
+        return Object.prototype.toString.call(value) === const_object_boolean;
+    }
+    JSHelper.isBoolean = isBoolean;
 
     // Name:
     //      isEmptyObject
