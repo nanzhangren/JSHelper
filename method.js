@@ -7,7 +7,8 @@
         const_object_object = '[object Object]', const_object_array = '[object Array]',
         const_object_function = '[object Function]', const_object_boolean = '[object Boolean]';
     var const_undefined = 'undefined',
-        CONST_DIV = 'DIV', CONST_INPUT = 'INPUT', CONST_IMG = 'IMG', CONST_BUTTON = 'BUTTON';
+        CONST_DIV = 'DIV', CONST_INPUT = 'INPUT', CONST_IMG = 'IMG', CONST_BUTTON = 'BUTTON',
+        CONST_SCRIPT = 'SCRIPT';
     var const_button = 'button';
     var const_type = 'type';
     var local_null = null;
@@ -402,6 +403,19 @@
         return ele.tagName === CONST_BUTTON || isInputElement(ele) && ele.getAttribute(const_type) === const_button;
     }
     JSHelper.isButton = isButton;
+
+    // Name:
+    //      isScript
+    // Description:
+    //      Judge whether the DOM element is a script.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is a script.
+    function isScript(ele) {
+        return !!(ele && ele.tagName === CONST_SCRIPT);
+    }
+    JSHelper.isScript = isScript;
 
     context.JSHelper = JSHelper;
 

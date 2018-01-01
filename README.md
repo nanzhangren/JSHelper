@@ -20,6 +20,7 @@ Here are useful helpful methods for JavaScript.
 - isTextNode
 - isImgElement
 - isButton
+- isScript
 
 ### To Add
 - isEqualArray
