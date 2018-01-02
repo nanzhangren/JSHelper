@@ -21,6 +21,7 @@ Here are useful helpful methods for JavaScript.
 - isImgElement
 - isButton
 - isScript
+- isLink
 
 ### To Add
 - isEqualArray

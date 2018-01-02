@@ -8,7 +8,7 @@
         const_object_function = '[object Function]', const_object_boolean = '[object Boolean]';
     var const_undefined = 'undefined',
         CONST_DIV = 'DIV', CONST_INPUT = 'INPUT', CONST_IMG = 'IMG', CONST_BUTTON = 'BUTTON',
-        CONST_SCRIPT = 'SCRIPT';
+        CONST_SCRIPT = 'SCRIPT', CONST_LINK = 'LINK';
     var const_button = 'button';
     var const_type = 'type';
     var local_null = null;
@@ -416,6 +416,19 @@
         return !!(ele && ele.tagName === CONST_SCRIPT);
     }
     JSHelper.isScript = isScript;
+
+    // Name:
+    //      isLink
+    // Description:
+    //      Judge whether the DOM element is a link.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is a link.
+    function isLink(ele) {
+        return !!(ele && ele.tagName === CONST_LINK);
+    }
+    JSHelper.isLink = isLink;
 
     context.JSHelper = JSHelper;
 
