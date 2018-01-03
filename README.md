@@ -22,6 +22,7 @@ Here are useful helpful methods for JavaScript.
 - isButton
 - isScript
 - isLink
+- isHtml
 
 ### To Add
 - isEqualArray
