@@ -23,6 +23,7 @@ Here are useful helpful methods for JavaScript.
 - isScript
 - isLink
 - isHtml
+- isBody
 
 ### To Add
 - isEqualArray
