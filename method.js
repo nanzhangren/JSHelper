@@ -8,7 +8,8 @@
         const_object_function = '[object Function]', const_object_boolean = '[object Boolean]';
     var const_undefined = 'undefined',
         CONST_DIV = 'DIV', CONST_INPUT = 'INPUT', CONST_IMG = 'IMG', CONST_BUTTON = 'BUTTON',
-        CONST_SCRIPT = 'SCRIPT', CONST_LINK = 'LINK', CONST_HTML = 'HTML', CONST_BODY = 'BODY';
+        CONST_SCRIPT = 'SCRIPT', CONST_LINK = 'LINK', CONST_HTML = 'HTML', CONST_HEAD = 'HEAD',
+        CONST_BODY = 'BODY';
     var const_button = 'button';
     var const_type = 'type';
     var local_null = null;
@@ -442,6 +443,19 @@
         return !!(ele && ele.tagName === CONST_HTML);
     }
     JSHelper.isHtml = isHtml;
+
+    // Name:
+    //      isHead
+    // Description:
+    //      Judge whether the DOM element is a head.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is a head.
+    function isHead(ele) {
+        return !!(ele && ele.tagName === CONST_HEAD);
+    }
+    JSHelper.isHead = isHead;
 
     // Name:
     //      isBody

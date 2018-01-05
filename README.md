@@ -23,6 +23,7 @@ Here are useful helpful methods for JavaScript.
 - isScript
 - isLink
 - isHtml
+- isHead
 - isBody
 
 ### To Add
