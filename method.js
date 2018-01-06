@@ -9,7 +9,7 @@
     var const_undefined = 'undefined',
         CONST_DIV = 'DIV', CONST_INPUT = 'INPUT', CONST_IMG = 'IMG', CONST_BUTTON = 'BUTTON',
         CONST_SCRIPT = 'SCRIPT', CONST_LINK = 'LINK', CONST_HTML = 'HTML', CONST_HEAD = 'HEAD',
-        CONST_BODY = 'BODY';
+        CONST_TITLE = 'TITLE', CONST_BODY = 'BODY';
     var const_button = 'button';
     var const_type = 'type';
     var local_null = null;
@@ -456,6 +456,19 @@
         return !!(ele && ele.tagName === CONST_HEAD);
     }
     JSHelper.isHead = isHead;
+
+    // Name:
+    //      isTitle
+    // Description:
+    //      Judge whether the DOM element is a title.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is a title.
+    function isTitle(ele) {
+        return !!(ele && ele.tagName === CONST_TITLE);
+    }
+    JSHelper.isTitle = isTitle;
 
     // Name:
     //      isBody

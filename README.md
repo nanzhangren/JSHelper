@@ -24,6 +24,7 @@ Here are useful helpful methods for JavaScript.
 - isLink
 - isHtml
 - isHead
+- isTitle
 - isBody
 
 ### To Add
