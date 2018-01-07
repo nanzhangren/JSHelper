@@ -483,6 +483,19 @@
     }
     JSHelper.isBody = isBody;
 
+    // Name:
+    //      isPositiveNumber
+    // Description:
+    //      Judge whether the value is a positive number.
+    // Params:
+    //      value [any] - The value to be judged.
+    // Returns:
+    //      Whether the value is a positive number.
+    function isPositiveNumber(value) {
+        return isNumber(value) && value > 0;
+    }
+    JSHelper.isPositiveNumber = isPositiveNumber;
+
     context.JSHelper = JSHelper;
 
 })(this);
