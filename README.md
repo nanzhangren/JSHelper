@@ -27,6 +27,7 @@ Here are useful helpful methods for JavaScript.
 - isTitle
 - isBody
 - isPositiveNumber
+- isNegativeNumber
 
 ### To Add
 - isEqualArray

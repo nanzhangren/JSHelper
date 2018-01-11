@@ -496,6 +496,19 @@
     }
     JSHelper.isPositiveNumber = isPositiveNumber;
 
+    // Name:
+    //      isNegativeNumber
+    // Description:
+    //      Judge whether the value is a negative number.
+    // Params:
+    //      value [any] - The value to be judged.
+    // Returns:
+    //      Whether the value is a negative number.
+    function isNegativeNumber(value) {
+        return isNumber(value) && value < 0;
+    }
+    JSHelper.isNegativeNumber = isNegativeNumber;
+
     context.JSHelper = JSHelper;
 
 })(this);
