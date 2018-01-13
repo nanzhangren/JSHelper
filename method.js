@@ -509,6 +509,19 @@
     }
     JSHelper.isNegativeNumber = isNegativeNumber;
 
+    // Name:
+    //      isNumberString
+    // Description:
+    //      Judge whether the value is a number string.
+    // Params:
+    //      value [any] - The value to be judged.
+    // Returns:
+    //      Whether the value is a number string.
+    function isNumberString(value) {
+        return isString(value) && value !== '.' && value.match(/^\d*\.?\d*$/);
+    }
+    JSHelper.isNumberString = isNumberString;
+
     context.JSHelper = JSHelper;
 
 })(this);

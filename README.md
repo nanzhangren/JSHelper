@@ -28,6 +28,7 @@ Here are useful helpful methods for JavaScript.
 - isBody
 - isPositiveNumber
 - isNegativeNumber
+- isNumberString
 
 ### To Add
 - isEqualArray
