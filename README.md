@@ -26,6 +26,7 @@ Here are useful helpful methods for JavaScript.
 - isHead
 - isTitle
 - isBody
+- isCode
 - isPositiveNumber
 - isNegativeNumber
 - isNumberString

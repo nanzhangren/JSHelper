@@ -9,7 +9,7 @@
     var const_undefined = 'undefined',
         CONST_DIV = 'DIV', CONST_INPUT = 'INPUT', CONST_IMG = 'IMG', CONST_BUTTON = 'BUTTON',
         CONST_SCRIPT = 'SCRIPT', CONST_LINK = 'LINK', CONST_HTML = 'HTML', CONST_HEAD = 'HEAD',
-        CONST_TITLE = 'TITLE', CONST_BODY = 'BODY';
+        CONST_TITLE = 'TITLE', CONST_BODY = 'BODY', CONST_CODE = 'CODE';
     var const_button = 'button';
     var const_type = 'type';
     var local_null = null;
@@ -482,6 +482,19 @@
         return !!(ele && ele.tagName === CONST_BODY);
     }
     JSHelper.isBody = isBody;
+
+    // Name:
+    //      isCode
+    // Description:
+    //      Judge whether the DOM element is a code.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is a code.
+    function isCode(ele) {
+        return !!(ele && ele.tagName === CONST_CODE);
+    }
+    JSHelper.isCode = isCode;
 
     // Name:
     //      isPositiveNumber
