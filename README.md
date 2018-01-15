@@ -27,6 +27,7 @@ Here are useful helpful methods for JavaScript.
 - isTitle
 - isBody
 - isCode
+- isForm
 - isPositiveNumber
 - isNegativeNumber
 - isNumberString
