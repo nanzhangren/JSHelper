@@ -31,6 +31,7 @@ Here are useful helpful methods for JavaScript.
 - isPositiveNumber
 - isNegativeNumber
 - isNumberString
+- isPhoneNumber
 
 ### To Add
 - isEqualArray

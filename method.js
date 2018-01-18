@@ -548,6 +548,19 @@
     }
     JSHelper.isNumberString = isNumberString;
 
+    // Name:
+    //      isPhoneNumber
+    // Description:
+    //      Judge whether the value is a phone number string.
+    // Params:
+    //      value [any] - The value to be judged.
+    // Returns:
+    //      Whether the value is a phone number string.
+    function isPhoneNumber(value) {
+        return isString(value) && value.match(/^\d{11}$/);
+    }
+    JSHelper.isPhoneNumber = isPhoneNumber;
+
     context.JSHelper = JSHelper;
 
 })(this);
