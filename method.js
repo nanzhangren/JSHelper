@@ -10,7 +10,7 @@
         CONST_DIV = 'DIV', CONST_INPUT = 'INPUT', CONST_IMG = 'IMG', CONST_BUTTON = 'BUTTON',
         CONST_SCRIPT = 'SCRIPT', CONST_LINK = 'LINK', CONST_HTML = 'HTML', CONST_HEAD = 'HEAD',
         CONST_TITLE = 'TITLE', CONST_BODY = 'BODY', CONST_CODE = 'CODE', CONST_FORM = 'FORM',
-        CONST_HEADER = 'HEADER', CONST_FOOTER = 'FOOTER';
+        CONST_HEADER = 'HEADER', CONST_FOOTER = 'FOOTER', CONST_ARTICLE = 'ARTICLE';
     var const_button = 'button';
     var const_type = 'type';
     var local_null = null;
@@ -509,6 +509,19 @@
         return !!(ele && ele.tagName === CONST_FOOTER);
     }
     JSHelper.isFooter = isFooter;
+
+    // Name:
+    //      isArticle
+    // Description:
+    //      Judge whether the DOM element is an article.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is an article.
+    function isArticle(ele) {
+        return !!(ele && ele.tagName === CONST_ARTICLE);
+    }
+    JSHelper.isArticle = isArticle;
 
     // Name:
     //      isCode
