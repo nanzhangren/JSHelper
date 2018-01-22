@@ -28,6 +28,7 @@ Here are useful helpful methods for JavaScript.
 - isBody
 - isHeader
 - isFooter
+- isNav
 - isArticle
 - isCode
 - isForm
