@@ -11,7 +11,7 @@
         CONST_SCRIPT = 'SCRIPT', CONST_LINK = 'LINK', CONST_HTML = 'HTML', CONST_HEAD = 'HEAD',
         CONST_TITLE = 'TITLE', CONST_BODY = 'BODY', CONST_CODE = 'CODE', CONST_FORM = 'FORM',
         CONST_HEADER = 'HEADER', CONST_FOOTER = 'FOOTER', CONST_ARTICLE = 'ARTICLE',
-        CONST_NAV = 'NAV';
+        CONST_NAV = 'NAV', CONST_CANVAS = 'CANVAS';
     var const_button = 'button';
     var const_type = 'type';
     var local_null = null;
@@ -549,6 +549,19 @@
         return !!(ele && ele.tagName === CONST_CODE);
     }
     JSHelper.isCode = isCode;
+
+    // Name:
+    //      isCanvas
+    // Description:
+    //      Judge whether the DOM element is a canvas.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is a canvas.
+    function isCanvas(ele) {
+        return !!(ele && ele.tagName === CONST_CANVAS);
+    }
+    JSHelper.isCanvas = isCanvas;
 
     // Name:
     //      isForm

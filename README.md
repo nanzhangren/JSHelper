@@ -31,6 +31,7 @@ Here are useful helpful methods for JavaScript.
 - isNav
 - isArticle
 - isCode
+- isCanvas
 - isForm
 - isPositiveNumber
 - isNegativeNumber
