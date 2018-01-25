@@ -11,7 +11,7 @@
         CONST_SCRIPT = 'SCRIPT', CONST_LINK = 'LINK', CONST_HTML = 'HTML', CONST_HEAD = 'HEAD',
         CONST_TITLE = 'TITLE', CONST_BODY = 'BODY', CONST_CODE = 'CODE', CONST_FORM = 'FORM',
         CONST_HEADER = 'HEADER', CONST_FOOTER = 'FOOTER', CONST_ARTICLE = 'ARTICLE',
-        CONST_NAV = 'NAV', CONST_CANVAS = 'CANVAS';
+        CONST_NAV = 'NAV', CONST_CANVAS = 'CANVAS', CONST_SPAN = 'SPAN';
     var const_button = 'button';
     var const_type = 'type';
     var local_null = null;
@@ -351,6 +351,19 @@
         return !!(ele && ele.tagName === CONST_DIV);
     }
     JSHelper.isDivElement = isDivElement;
+
+    // Name:
+    //      isSpan
+    // Description:
+    //      Judge whether the DOM element is a span.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is a span.
+    function isSpan(ele) {
+        return !!(ele && ele.tagName === CONST_SPAN);
+    }
+    JSHelper.isSpan = isSpan;
 
     // Name:
     //      isInputElement

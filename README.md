@@ -16,6 +16,7 @@ Here are useful helpful methods for JavaScript.
 - convertKeyCodeToASCIICode
 - getFieldValueInComplexObject
 - isDivElement
+- isSpan
 - isInputElement
 - isTextNode
 - isImgElement
