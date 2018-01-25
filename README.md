@@ -15,11 +15,11 @@ Here are useful helpful methods for JavaScript.
 - isEqualObject
 - convertKeyCodeToASCIICode
 - getFieldValueInComplexObject
-- isDivElement
+- isDiv
 - isSpan
-- isInputElement
+- isInput
 - isTextNode
-- isImgElement
+- isImg
 - isButton
 - isScript
 - isLink

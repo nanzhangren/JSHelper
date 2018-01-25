@@ -340,17 +340,17 @@
     JSHelper.getFieldValueInComplexObject = getFieldValueInComplexObject;
 
     // Name:
-    //      isDivElement
+    //      isDiv
     // Description:
     //      Judge whether the DOM element is a div.
     // Params:
     //      value [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a div.
-    function isDivElement(ele) {
+    function isDiv(ele) {
         return !!(ele && ele.tagName === CONST_DIV);
     }
-    JSHelper.isDivElement = isDivElement;
+    JSHelper.isDiv = isDiv;
 
     // Name:
     //      isSpan
@@ -366,17 +366,17 @@
     JSHelper.isSpan = isSpan;
 
     // Name:
-    //      isInputElement
+    //      isInput
     // Description:
     //      Judge whether the DOM element is an input.
     // Params:
     //      value [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is an input.
-    function isInputElement(ele) {
+    function isInput(ele) {
         return !!(ele && ele.tagName === CONST_INPUT);
     }
-    JSHelper.isInputElement = isInputElement;
+    JSHelper.isInput = isInput;
 
     // Name:
     //      isTextNode
@@ -392,17 +392,17 @@
     JSHelper.isTextNode = isTextNode;
 
     // Name:
-    //      isImgElement
+    //      isImage
     // Description:
     //      Judge whether the DOM element is an img.
     // Params:
     //      value [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is an img.
-    function isImgElement(ele) {
+    function isImage(ele) {
         return !!(ele && ele.tagName === CONST_IMG);
     }
-    JSHelper.isImgElement = isImgElement;
+    JSHelper.isImage = isImage;
 
     // Name:
     //      isButton
@@ -416,7 +416,7 @@
         if (!ele) {
             return false;
         }
-        return ele.tagName === CONST_BUTTON || isInputElement(ele) && ele.getAttribute(const_type) === const_button;
+        return ele.tagName === CONST_BUTTON || isInput(ele) && ele.getAttribute(const_type) === const_button;
     }
     JSHelper.isButton = isButton;
 
