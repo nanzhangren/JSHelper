@@ -33,6 +33,7 @@ Here are useful helpful methods for JavaScript.
 - isArticle
 - isCode
 - isCanvas
+- isSvg
 - isForm
 - isPositiveNumber
 - isNegativeNumber

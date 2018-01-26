@@ -11,7 +11,7 @@
         CONST_SCRIPT = 'SCRIPT', CONST_LINK = 'LINK', CONST_HTML = 'HTML', CONST_HEAD = 'HEAD',
         CONST_TITLE = 'TITLE', CONST_BODY = 'BODY', CONST_CODE = 'CODE', CONST_FORM = 'FORM',
         CONST_HEADER = 'HEADER', CONST_FOOTER = 'FOOTER', CONST_ARTICLE = 'ARTICLE',
-        CONST_NAV = 'NAV', CONST_CANVAS = 'CANVAS', CONST_SPAN = 'SPAN';
+        CONST_NAV = 'NAV', CONST_CANVAS = 'CANVAS', CONST_SVG = 'SVG', CONST_SPAN = 'SPAN';
     var const_button = 'button';
     var const_type = 'type';
     var local_null = null;
@@ -575,6 +575,19 @@
         return !!(ele && ele.tagName === CONST_CANVAS);
     }
     JSHelper.isCanvas = isCanvas;
+
+    // Name:
+    //      isSvg
+    // Description:
+    //      Judge whether the DOM element is a svg.
+    // Params:
+    //      value [HTMLElement] - The DOM element.
+    // Returns:
+    //      Whether the DOM element is a svg.
+    function isSvg(ele) {
+        return !!(ele && ele.tagName === CONST_SVG);
+    }
+    JSHelper.isSvg = isSvg;
 
     // Name:
     //      isForm
