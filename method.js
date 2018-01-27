@@ -654,6 +654,20 @@
     }
     JSHelper.isPhoneNumber = isPhoneNumber;
 
+    // Name:
+    //      hasClass
+    // Description:
+    //      Whether the DOM element has any class.
+    // Params:
+    //      ele [HTMLElement] - The DOM element.
+    // Returns:
+    //      true, the DOM element has class.
+    //      false, the DOM element does not have a class.
+    function hasClass(ele) {
+        return ele && ele.classList.length > 0;
+    }
+    JSHelper.hasClass = hasClass;
+
     context.JSHelper = JSHelper;
 
 })(this);

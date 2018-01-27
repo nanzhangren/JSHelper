@@ -39,6 +39,7 @@ Here are useful helpful methods for JavaScript.
 - isNegativeNumber
 - isNumberString
 - isPhoneNumber
+- hasClass
 
 ### To Add
 - isEqualArray
