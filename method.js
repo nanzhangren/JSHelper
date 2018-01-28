@@ -344,7 +344,7 @@
     // Description:
     //      Judge whether the DOM element is a div.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a div.
     function isDiv(ele) {
@@ -357,7 +357,7 @@
     // Description:
     //      Judge whether the DOM element is a span.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a span.
     function isSpan(ele) {
@@ -370,7 +370,7 @@
     // Description:
     //      Judge whether the DOM element is an input.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is an input.
     function isInput(ele) {
@@ -383,7 +383,7 @@
     // Description:
     //      Judge whether the DOM element is a text node.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a text node.
     function isTextNode(ele) {
@@ -396,7 +396,7 @@
     // Description:
     //      Judge whether the DOM element is an img.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is an img.
     function isImage(ele) {
@@ -409,7 +409,7 @@
     // Description:
     //      Judge whether the DOM element is a button.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a button.
     function isButton(ele) {
@@ -425,7 +425,7 @@
     // Description:
     //      Judge whether the DOM element is a script.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a script.
     function isScript(ele) {
@@ -438,7 +438,7 @@
     // Description:
     //      Judge whether the DOM element is a link.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a link.
     function isLink(ele) {
@@ -451,7 +451,7 @@
     // Description:
     //      Judge whether the DOM element is a html.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a html.
     function isHtml(ele) {
@@ -464,7 +464,7 @@
     // Description:
     //      Judge whether the DOM element is a head.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a head.
     function isHead(ele) {
@@ -477,7 +477,7 @@
     // Description:
     //      Judge whether the DOM element is a title.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a title.
     function isTitle(ele) {
@@ -490,7 +490,7 @@
     // Description:
     //      Judge whether the DOM element is a body.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a body.
     function isBody(ele) {
@@ -503,7 +503,7 @@
     // Description:
     //      Judge whether the DOM element is a header.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a header.
     function isHeader(ele) {
@@ -516,7 +516,7 @@
     // Description:
     //      Judge whether the DOM element is a footer.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a footer.
     function isFooter(ele) {
@@ -529,7 +529,7 @@
     // Description:
     //      Judge whether the DOM element is a nav.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a nav.
     function isNav(ele) {
@@ -542,7 +542,7 @@
     // Description:
     //      Judge whether the DOM element is an article.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is an article.
     function isArticle(ele) {
@@ -555,7 +555,7 @@
     // Description:
     //      Judge whether the DOM element is a code.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a code.
     function isCode(ele) {
@@ -568,7 +568,7 @@
     // Description:
     //      Judge whether the DOM element is a canvas.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a canvas.
     function isCanvas(ele) {
@@ -581,7 +581,7 @@
     // Description:
     //      Judge whether the DOM element is a svg.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a svg.
     function isSvg(ele) {
@@ -594,7 +594,7 @@
     // Description:
     //      Judge whether the DOM element is a form.
     // Params:
-    //      value [HTMLElement] - The DOM element.
+    //      ele [HTMLElement] - The DOM element.
     // Returns:
     //      Whether the DOM element is a form.
     function isForm(ele) {
