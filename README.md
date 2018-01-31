@@ -40,6 +40,7 @@ Here are useful helpful methods for JavaScript.
 - isNumberString
 - isPhoneNumber
 - hasClass
+- hasChildElement
 
 ### To Add
 - isEqualArray

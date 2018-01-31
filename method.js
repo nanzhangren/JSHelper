@@ -668,6 +668,21 @@
     }
     JSHelper.hasClass = hasClass;
 
+    // Name:
+    //      hasChildElement
+    // Description:
+    //      Whether the DOM element has any child element.
+    // Params:
+    //      ele [HTMLElement] - The DOM element.
+    // Returns:
+    //      true, the DOM element has child element.
+    //      false, the DOM element does not have a child element.
+    function hasChildElement(ele) {
+        return ele && ele.childNodes.length > 0;
+    }
+    JSHelper.hasChildElement = hasChildElement;
+
+
     context.JSHelper = JSHelper;
 
 })(this);
