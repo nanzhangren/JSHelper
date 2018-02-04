@@ -15,6 +15,7 @@
     var const_button = 'button';
     var const_type = 'type';
     var local_null = null;
+    var LOCAL_TEXT = Text;
 
 
     // Name:
@@ -387,7 +388,7 @@
     // Returns:
     //      Whether the DOM element is a text node.
     function isTextNode(ele) {
-        return !!(ele && ele instanceof Text);
+        return !!(ele && ele instanceof LOCAL_TEXT);
     }
     JSHelper.isTextNode = isTextNode;
 
